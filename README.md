@@ -80,23 +80,23 @@ $xiaohei-illustrations
 
 ## 한국어 구성 예제
 
-아래는 한글 표기와 장면 구성을 검토하기 위해 직접 작성한 **SVG 예시**입니다. AI 이미지 생성 결과가 아니며, 최종 손그림 질감을 보여 주는 품질 샘플도 아닙니다. 실제 그림은 이미지 생성 도구를 사용하고 [시각 스타일](xiaohei-illustrations/references/style-dna.md)을 기준으로 검수합니다.
+아래는 이미지 생성 도구로 새로 만든 **PNG 예시**입니다. 한글 표기와 장면 구성을 확인하고, [시각 스타일](xiaohei-illustrations/references/style-dna.md)을 기준으로 직접 검수한 결과입니다.
 
 ### 정보 과부하: 모으기보다 선별하기
 
-![샤오헤이가 종이를 체로 걸러 핵심만 남기는 한글 구성 예제](xiaohei-illustrations/assets/examples/01-information-overload.svg)
+![샤오헤이가 엉킨 실에서 핵심 매듭만 남기는 한글 생성 예제](xiaohei-illustrations/assets/examples/01-information-overload.png)
 
 ### 작은 검증: 크게 만들기 전에 시험하기
 
-![샤오헤이가 작은 시험 장치로 가설을 확인하는 한글 구성 예제](xiaohei-illustrations/assets/examples/02-small-validation.svg)
+![샤오헤이가 작은 시험 장치로 가설을 확인하는 한글 생성 예제](xiaohei-illustrations/assets/examples/02-small-validation.png)
 
 ### 콘텐츠 재사용: 원본 하나를 여러 형식으로
 
-![샤오헤이가 원본을 요약과 그림과 음성으로 가공하는 한글 구성 예제](xiaohei-illustrations/assets/examples/03-content-reuse.svg)
+![샤오헤이가 원본을 요약과 그림과 음성으로 가공하는 한글 생성 예제](xiaohei-illustrations/assets/examples/03-content-reuse.png)
 
 ### 맥락 인계: 파일보다 판단의 맥락 전달하기
 
-![샤오헤이들이 목표와 결정과 다음 단계를 담은 상자를 건네는 한글 구성 예제](xiaohei-illustrations/assets/examples/04-context-handoff.svg)
+![샤오헤이들이 목표와 결정과 다음 단계를 담은 끈을 건네는 한글 생성 예제](xiaohei-illustrations/assets/examples/04-context-handoff.png)
 
 나머지 네 장과 각 장면의 한글 표기는 [전체 예제 목록](xiaohei-illustrations/assets/examples/README.md)에서 확인할 수 있습니다. 예제는 설치 폴더 안에서 한 벌만 관리합니다. 새 글을 작업할 때는 예제의 물건이나 구도를 그대로 반복하지 않습니다.
 
@@ -121,7 +121,7 @@ $xiaohei-illustrations
     ├── LICENSE
     ├── NOTICE.md
     ├── agents/openai.yaml
-    ├── assets/examples/         # 한글 SVG 구성 예제 8개
+    ├── assets/examples/         # 이미지 생성 도구로 만든 한글 PNG 예제 8개
     └── references/              # 스타일·캐릭터·구성·프롬프트·검수
 ```
 
@@ -133,7 +133,7 @@ Python 3.9 이상에서 실행합니다.
 python3 scripts/check_repository.py
 ```
 
-설치 폴더, 스킬 이름, 문서 링크, 한글 예제, SVG 안전성, 라이선스 동봉을 검사합니다. 정적 검사는 실제 에이전트의 스킬 인식이나 이미지 생성 결과까지 보장하지 않습니다.
+설치 폴더, 스킬 이름, 문서 링크, 한글 예제, PNG 형식·비율, 라이선스 동봉을 검사합니다. 정적 검사는 실제 에이전트의 스킬 인식이나 이미지 생성 결과의 의미·문구 품질까지 보장하지 않습니다.
 
 ## 라이선스
 

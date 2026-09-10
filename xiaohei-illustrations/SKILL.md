@@ -20,7 +20,7 @@ description: 한국어 기사, 블로그, 업무 문서와 지식 콘텐츠의 �
 - `references/composition-patterns.md`: 구성 선택과 새로운 비유 만들기.
 - `references/prompt-template.md`: 단일 이미지 생성·편집 프롬프트.
 - `references/qa-checklist.md`: 생성 후 검수와 수정.
-- `assets/examples/README.md`: 한국어 구성 예제 목록. SVG는 장면·표기 참고용이며 AI 생성 결과가 아니다. 최종 손그림 질감의 기준으로 삼지 않는다.
+- `assets/examples/README.md`: 이미지 생성 도구로 만든 한국어 PNG 구성 예제 목록. 장면·표기 확인에만 사용하고, 새 글에서는 비유를 새로 설계한다.
 
 예제를 매번 전부 읽거나 이미지 모델에 기본 참조로 넣지 않는다. 사용자가 특정 예제를 지정했거나 구성을 확인할 필요가 있을 때만 해당 파일을 살펴본다.
 
