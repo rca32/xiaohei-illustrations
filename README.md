@@ -1,281 +1,140 @@
-# Ian Xiaohei Illustrations
+# 샤오헤이 본문 일러스트
 
-> 把中文文章里的判断、流程、状态和隐喻，变成一张张白底、手绘、怪诞但清爽的正文配图。
+> 한국어 글의 핵심 생각을 흰 배경의 간결하고 엉뚱한 손그림으로 표현하는 AI 에이전트 스킬입니다.
 >
-> 16:9 横版 | 小黑 IP | 纯白手绘 | 少量红橙蓝中文批注 | Codex Skill
+> 16:9 가로형 · 검은 캐릭터 · 넉넉한 여백 · 짧은 한글 주석
 
----
+## 무엇을 하는 스킬인가요?
 
-## 这个仓库是什么
+기사, 블로그, 업무 문서, 지식 콘텐츠에서 그림으로 설명할 가치가 있는 부분을 찾아 본문 삽화를 기획하고 생성합니다. 글 전체를 도표로 옮기기보다 한 장에 하나의 판단, 흐름, 상태 또는 비유를 담습니다.
 
-Ian Xiaohei Illustrations 是一个 Codex Skill，用来指导 AI Agent 为中文文章、帖子、博客、Notion 文档和方法论内容生成正文配图。
+샤오헤이는 검은 몸, 흰 점 눈, 가느다란 팔다리를 가진 무표정한 작은 캐릭터입니다. 장식처럼 서 있는 대신 자료를 분류하고, 틈을 메우고, 장치를 돌리는 등 그림의 핵심 행동을 직접 수행합니다.
 
-它不是通用插画 prompt，也不是 PPT 信息图模板。它的核心目标是：先理解文章里的认知锚点，再把其中一个判断、流程、结构、状态或隐喻，变成一张有记忆点的 16:9 手绘解释图。
+**슬라이드나 복잡한 정보 도표가 아니라, 글의 한 가지 생각을 기억하게 만드는 설명 그림을 만듭니다.**
 
-默认视觉 IP 是“小黑”：一个黑色实心、白点眼、细腿、空表情的小角色。小黑不是吉祥物，不是贴纸，也不是站在角落里的装饰物，而是正在认真参与系统运转的荒诞工作者。
+## 기본 결과물
 
-一句话：**让 AI 不只是“配一张图”，而是把文章里的一个关键认知动作画出来。**
+- 일반적인 글은 4~8장의 장면 계획, 짧은 글은 1~3장.
+- 각 장면의 삽입 위치, 전달할 생각, 구성, 캐릭터 행동, 정확한 한글 표기.
+- 이미지 생성 도구로 만든 개별 PNG 파일. 기본 저장 위치는 `assets/<article-slug>-illustrations/`.
 
----
+계획만 요청하면 이미지를 생성하지 않습니다. 이미지 생성 기능이 없는 환경에서는 계획과 프롬프트만 제공하며, 생성하지 않은 이미지를 완성본이라고 안내하지 않습니다. SVG, HTML, PPTX, PDF 제작은 기본 결과물이 아닙니다.
 
-## 适合谁用
+## 설치
 
-特别适合：
-
-- 写中文文章，需要正文配图和文章插图的人
-- 做知识型内容、方法论内容、AI 工作流内容的人
-- 想把抽象判断画成具体隐喻的人
-- 想要一种比 PPT 信息图更轻、更怪、更有个人识别度的配图风格的人
-- 用 Codex 做内容生产，希望稳定复用一套视觉语言的人
-
-不适合：
-
-- 想要商业插画、品牌 KV 或精致扁平插画的人
-- 想要传统 PPT 信息图、复杂架构图或流程图的人
-- 想要儿童卡通、可爱 IP、表情包风格的人
-- 想把大量正文、长段解释或完整课程页塞进一张图里的人
-- 需要严格可编辑矢量源文件的人
-
----
-
-## 它会产出什么
-
-默认输出：
-
-- 16:9 横版正文配图
-- 一篇文章的 4-8 张 shot list
-- 每张图的主题、核心意思、结构类型、小黑动作和中文标注建议
-- 最终 PNG 图片，保存到 workspace 的 `assets/<article-slug>-illustrations/`
-
-默认不输出：
-
-- PPTX / PDF / Keynote
-- SVG / HTML / Canvas 可编辑图
-- 商业海报或封面 KV
-- 大段文字型信息图
-
----
-
-## 视觉风格
-
-这个 skill 默认使用 Ian 的“小黑怪诞正文配图”风格：
-
-- 纯白背景，不要纸纹、米色、阴影、渐变
-- 黑色手绘线稿，细线，轻微抖动
-- 大量留白，主体只占画面约 40%-60%
-- 少量红色、橙色、蓝色中文手写批注
-- 一张图只表达一个核心动作、结构、状态或隐喻
-- 小黑必须参与核心动作，不能只是装饰
-- 怪诞、有创意、清爽，但不幼稚、不卖萌
-
----
-
-## 示例效果
-
-### 两个断点
-
-![两个断点](examples/images/01-two-breakpoints.png)
-
-### 按目的分拣
-
-![按目的分拣](examples/images/02-sort-by-purpose.png)
-
-### 一鱼多吃
-
-![一鱼多吃](examples/images/03-one-fish-many-uses.png)
-
-### 承接路径
-
-![承接路径](examples/images/04-handoff-path.png)
-
-### 信息井
-
-![信息井](examples/images/05-information-well.png)
-
-### 想法压机
-
-![想法压机](examples/images/06-idea-press.png)
-
-### 内容发酵
-
-![内容发酵](examples/images/07-content-fermentation.png)
-
-### 信任桥
-
-![信任桥](examples/images/08-trust-bridge.png)
-
-这些图片是风格校准样例，不是构图模板。使用时应该从当前文章重新发明隐喻，不要照抄旧案例的物件和构图。
-
----
-
-## 安装
-
-克隆仓库：
+이 저장소를 내려받고 **안쪽의 `xiaohei-illustrations` 폴더**를 스킬 디렉터리에 복사합니다. 아래는 기존 Codex 스킬 디렉터리를 사용하는 설치 예시입니다.
 
 ```bash
-git clone https://github.com/helloianneo/ian-xiaohei-illustrations.git
-cd ian-xiaohei-illustrations
-```
-
-复制 skill 到 Codex skills 目录：
-
-```bash
+git clone https://github.com/rca32/xiaohei-illustrations.git
+cd xiaohei-illustrations
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R ./ian-xiaohei-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
+cp -R ./xiaohei-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
-安装后，在 Codex 里使用：
+Windows PowerShell:
+
+```powershell
+git clone https://github.com/rca32/xiaohei-illustrations.git
+Set-Location xiaohei-illustrations
+$codexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $HOME '.codex' }
+$skillsDir = Join-Path $codexHome 'skills'
+New-Item -ItemType Directory -Force -Path $skillsDir | Out-Null
+Copy-Item -Recurse -Path .\xiaohei-illustrations -Destination $skillsDir
+```
+
+사용 중인 에이전트가 별도 스킬 경로를 요구하면 같은 폴더를 해당 경로에 설치하세요. 기존 개인명 접두사 버전이 설치되어 있다면 새 버전의 인식을 확인한 뒤 이전 폴더를 제거해 중복 호출을 피하세요. 실행 이름은 `$xiaohei-illustrations`입니다.
+
+## 바로 사용하기
+
+### 글에 어울리는 그림부터 기획하기
 
 ```text
-Use $ian-xiaohei-illustrations 为这篇中文文章设计并生成 5 张小黑怪诞正文配图。
+$xiaohei-illustrations
+아래 글에 들어갈 그림을 5장 정도 기획해 줘. 아직 이미지는 만들지 마.
+각 그림의 삽입 위치, 핵심 생각, 샤오헤이의 행동, 정확한 한글 표기를 써 줘.
+
+<본문 붙여넣기>
 ```
 
----
-
-## 怎么用
-
-### 只做配图规划
+### 본문 그림 생성하기
 
 ```text
-Use $ian-xiaohei-illustrations 先不要生图。
-请分析下面这篇文章哪里值得配图，输出 5 张左右的 shot list。
-每张图写清楚：放在哪段后、主题、核心意思、结构类型、小黑在做什么、建议中文标注词。
+$xiaohei-illustrations
+아래 한국어 글에 들어갈 그림 4장을 각각 생성해 줘.
+16:9 가로형, 순백색 배경, 검은 손그림 선, 짧은 한글 주석을 사용해.
+샤오헤이가 핵심 행동을 직접 하게 하고, 한 장에 한 가지 생각만 담아 줘.
 
-<粘贴文章>
+<본문 붙여넣기>
 ```
 
-### 直接生成正文配图
+### 한 가지 생각을 그림으로 표현하기
 
 ```text
-Use $ian-xiaohei-illustrations 把下面这篇文章生成 4 张小黑怪诞正文配图。
-要求：16:9 横版、纯白背景、黑色手绘线稿、少量红橙蓝中文手写批注。
-
-<粘贴文章>
+$xiaohei-illustrations
+"많이 모으는 것보다 필요한 정보를 골라내는 것이 중요하다"를 한 장으로 그려 줘.
+샤오헤이가 커다란 체를 움직여 종이 더미에서 필요한 쪽지만 걸러내게 해.
+그림 속 문구는 "모으기", "선별", "핵심만"으로 제한해 줘.
 ```
 
-### 为单个概念生成一张图
+전체 사용 예시와 여덟 가지 한국어 주제는 [프롬프트 예제](examples/prompts.md)를 참고하세요.
 
-```text
-Use $ian-xiaohei-illustrations 为“信任不是喊出来的，而是一块证据一块证据铺过去”生成一张正文配图。
-画面要怪诞但清爽，小黑必须承担核心动作。
-```
+## 한국어 구성 예제
 
-### 去掉图里的标题或错误文字
+아래는 한글 표기와 장면 구성을 검토하기 위해 직접 작성한 **SVG 예시**입니다. AI 이미지 생성 결과가 아니며, 최종 손그림 질감을 보여 주는 품질 샘플도 아닙니다. 실제 그림은 이미지 생성 도구를 사용하고 [시각 스타일](xiaohei-illustrations/references/style-dna.md)을 기준으로 검수합니다.
 
-```text
-Use $ian-xiaohei-illustrations 帮我编辑这张图，去掉左上角的“流程图”标题，其他内容保持不变。
-```
+### 정보 과부하: 모으기보다 선별하기
 
-更多示例见 [examples/prompts.md](examples/prompts.md)。
+![샤오헤이가 종이를 체로 걸러 핵심만 남기는 한글 구성 예제](xiaohei-illustrations/assets/examples/01-information-overload.svg)
 
----
+### 작은 검증: 크게 만들기 전에 시험하기
 
-## 工作流程
+![샤오헤이가 작은 시험 장치로 가설을 확인하는 한글 구성 예제](xiaohei-illustrations/assets/examples/02-small-validation.svg)
 
-这个 skill 的流程是：
+### 콘텐츠 재사용: 원본 하나를 여러 형식으로
 
-1. 读取文章、Markdown、Notion 内容、截图或用户给的主题
-2. 提炼核心观点、认知转折、流程结构和适合视觉化的段落
-3. 先输出 shot list：每张图只选一个认知锚点
-4. 为每张图选择结构类型：Workflow、系统局部、前后对比、角色状态、概念隐喻、方法分层、地图路线或小漫画分镜
-5. 重新发明一个低科技、怪诞但成立的物理隐喻
-6. 让小黑承担核心动作
-7. 每张图单独调用图像模型生成
-8. 按 QA checklist 检查：白底、留白、小黑动作、中文标注、非 PPT 感、非旧案例复刻
-9. 保存最终 PNG，并报告用途和路径
+![샤오헤이가 원본을 요약과 그림과 음성으로 가공하는 한글 구성 예제](xiaohei-illustrations/assets/examples/03-content-reuse.svg)
 
----
+### 맥락 인계: 파일보다 판단의 맥락 전달하기
 
-## 目录结构
+![샤오헤이들이 목표와 결정과 다음 단계를 담은 상자를 건네는 한글 구성 예제](xiaohei-illustrations/assets/examples/04-context-handoff.svg)
+
+나머지 네 장과 각 장면의 한글 표기는 [전체 예제 목록](xiaohei-illustrations/assets/examples/README.md)에서 확인할 수 있습니다. 예제는 설치 폴더 안에서 한 벌만 관리합니다. 새 글을 작업할 때는 예제의 물건이나 구도를 그대로 반복하지 않습니다.
+
+## 작업 원칙
+
+순백색 배경, 검은 손그림 선, 넓은 여백을 기본으로 합니다. 빨강은 문제와 강조, 주황은 주요 움직임, 파랑은 보조 설명에만 절제해 사용합니다. 한글 주석은 보통 3~5개, 최대 8개이며 각 주석은 짧은 단어 또는 어구로 씁니다.
+
+그림에 요청하지 않은 제목, 개인 서명, 연락처, 홍보 문구, QR 코드를 넣지 않습니다. 한글 오탈자와 깨진 글자는 생성 후 직접 확인하고 수정합니다. 읽을 수 없는 글자를 삭제하거나 영문으로 바꾸는 것으로 한국어 검수를 대신하지 않습니다.
+
+## 폴더 안내
 
 ```text
 .
-├── README.md
-├── LICENSE
-├── NOTICE.md
-├── assets/
-│   └── ian-wechat-qr.jpg
-├── examples/
-│   ├── images/
-│   │   ├── 01-two-breakpoints.png
-│   │   ├── 02-sort-by-purpose.png
-│   │   └── ...
-│   └── prompts.md
-└── ian-xiaohei-illustrations/
+├── README.md                    # 사용자 안내
+├── AGENTS.md                    # 저장소 수정 원칙
+├── LICENSE                      # 원본 라이선스
+├── NOTICE.md                    # 한국어판 및 예제 안내
+├── examples/prompts.md          # 복사해서 쓰는 한국어 예시
+├── scripts/check_repository.py  # 의존성 없는 정적 검사
+└── xiaohei-illustrations/        # 설치할 스킬 폴더
     ├── SKILL.md
-    ├── agents/
-    │   └── openai.yaml
-    ├── assets/
-    │   └── examples/
-    └── references/
-        ├── style-dna.md
-        ├── xiaohei-ip.md
-        ├── composition-patterns.md
-        ├── prompt-template.md
-        └── qa-checklist.md
+    ├── LICENSE
+    ├── NOTICE.md
+    ├── agents/openai.yaml
+    ├── assets/examples/         # 한글 SVG 구성 예제 8개
+    └── references/              # 스타일·캐릭터·구성·프롬프트·검수
 ```
 
-真正需要安装到 Codex 的是子目录：
+## 저장소 검사
 
-```text
-ian-xiaohei-illustrations/
+Python 3.9 이상에서 실행합니다.
+
+```bash
+python3 scripts/check_repository.py
 ```
 
-根目录的 README、LICENSE、NOTICE 和 examples 是 GitHub 分享文档。
+설치 폴더, 스킬 이름, 문서 링크, 한글 예제, SVG 안전성, 라이선스 동봉을 검사합니다. 정적 검사는 실제 에이전트의 스킬 인식이나 이미지 생성 결과까지 보장하지 않습니다.
 
----
+## 라이선스
 
-## 注意事项
-
-- 图片里的中文文字越短越稳定。
-- 每张图只讲一个核心结构，不要把文章做成说明书。
-- 小黑必须承担核心动作；如果去掉小黑画面仍然完全成立，说明小黑太装饰了。
-- 示例图只用于校准线条密度、留白、颜色克制和小黑参与方式，不要复刻构图。
-- AI 图像模型可能出现错字、幻觉标签、风格漂移或多余标题，生成后需要检查。
-- 如果中文错字严重，优先减少标注词并重生成。
-
----
-
-## 相关项目
-
-- [Ian Handdrawn PPT](https://github.com/helloianneo/ian-handdrawn-ppt) — 中文手绘技术 PPT-style 页面图生成 Skill
-- [Awesome Claude Code Skills](https://github.com/helloianneo/awesome-claude-code-skills) — Claude Code Skills / Agents / Plugins 精选合集
-- [Obsidian + Claude AI Second Brain](https://github.com/helloianneo/obsidian-ai-second-brain) — Obsidian + Claude AI 个人知识库搭建指南
-
----
-
-## 关于作者
-
-**Ian (伊恩)** — 产品设计师 / 一人公司实践者 / AI Builder
-
-用 AI 团队打造一人公司。
-
-- GitHub: [helloianneo](https://github.com/helloianneo)
-- X/Twitter: [@ianneo_ai](https://x.com/ianneo_ai)
-- 网站: [www.ianneo.xyz](https://www.ianneo.xyz)
-- 微信: `ianneoxyz`
-- 邮箱: hello.neoc@gmail.com
-
----
-
-## 继续探索
-
-这套小黑配图 Skill，只是我用 AI 搭建个人生产系统里的一个小工具。
-
-如果你也在用 AI 做内容、知识库、工作流或产品化，可以继续看我的网站：[www.ianneo.xyz](https://www.ianneo.xyz)。
-
-只想先观察，可以关注我的 [X/Twitter](https://x.com/ianneo_ai)。
-
-想了解 Indie Builders Club，加微信：`ianneoxyz`，备注「OPC」。
-
-<p>
-  <img src="assets/ian-wechat-qr.jpg" alt="Ian 微信二维码" width="120">
-</p>
-
-不方便扫码也可以搜索微信：`ianneoxyz`。
-
----
-
-## License
-
-MIT License. See [LICENSE](LICENSE).
+[MIT 라이선스](LICENSE)를 따릅니다. 원본의 저작권 고지는 유지하며, 한국어판의 변경 범위와 예제 형식은 [NOTICE.md](NOTICE.md)에 안내합니다.

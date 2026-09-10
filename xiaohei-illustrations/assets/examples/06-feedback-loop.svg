@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" xml:lang="ko" role="img" aria-labelledby="title desc">
+<title>반복 개선</title><desc>샤오헤이가 손 펌프를 조절해 싹에 물을 보내고 상태를 확인한다.</desc>
+<rect width="1280" height="720" fill="#fff"/>
+<defs><g id="xiaohei"><path d="M-27 2Q-39-25-25-49Q-10-66 13-58Q34-56 32-31L30 4Q6 16-27 2Z" fill="#202020"/><circle cx="-9" cy="-34" r="4" fill="#fff"/><circle cx="9" cy="-34" r="4" fill="#fff"/><path d="M-16 9l-4 29-13 3M17 10l5 28 12 1" fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round"/></g></defs>
+<g fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M431 384l69-2 1 101-72 1Z M466 383v-86m-49 0 100-3 M497 411h166q45 0 45-46v-61l58-1"/>
+<use href="#xiaohei" x="361" y="427"/><path d="M387 403l30-107m-78 108 47-58 43-50"/>
+<path d="M728 413l95-1-13 70-69 1Z M774 413v-70q-43-28-51-5 9 28 51 24m0 21q12-41 47-27-2 28-47 27"/>
+<path d="M766 329q-15 18 0 22 15-3 0-22Z" fill="#3b728d" stroke="#3b728d"/>
+<path d="M810 515q-193 76-376 6m13 15-15-15 22-1" stroke="#3b728d" stroke-dasharray="7 9"/>
+<circle cx="563" cy="267" r="33"/><path d="M563 267l17-14" stroke="#3b728d"/>
+<path d="M514 440h116m-13-9 14 9-14 9" stroke="#d87932"/>
+</g>
+<g font-family="Noto Sans CJK KR, NanumGothic, Malgun Gothic, sans-serif" font-size="28" font-weight="500" text-anchor="middle">
+<text x="459" y="260" fill="#d87932">실행</text>
+<text x="780" y="257" fill="#3b728d">관찰</text>
+<text x="594" y="606" fill="#3b728d">개선</text>
+</g>
+</svg>

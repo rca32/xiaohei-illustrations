@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" xml:lang="ko" role="img" aria-labelledby="title desc">
+<title>우선순위</title><desc>샤오헤이가 좁은 문으로 작업 상자를 하나씩 밀어 넣는다.</desc>
+<rect width="1280" height="720" fill="#fff"/>
+<defs><g id="xiaohei"><path d="M-27 2Q-39-25-25-49Q-10-66 13-58Q34-56 32-31L30 4Q6 16-27 2Z" fill="#202020"/><circle cx="-9" cy="-34" r="4" fill="#fff"/><circle cx="9" cy="-34" r="4" fill="#fff"/><path d="M-16 9l-4 29-13 3M17 10l5 28 12 1" fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round"/></g></defs>
+<g fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M676 487l-2-254 118-3 2 258 M691 481V249l86-1v234"/>
+<path d="M620 404l87-1 1 72-87 1Z M621 404l24-15 83-2-21 16m0 72 21-20v-68"/>
+<use href="#xiaohei" x="554" y="440"/><path d="M581 416l40 2m-40 24 40-2"/>
+<path d="M282 422l82-1 1 65-82 2Z M310 350l82 1-1 68-81 1Z M372 433l79-1 1 54-80 1Z M301 441h40m-12-72h44m-50 14h31"/>
+<path d="M787 394q53-2 98-21m-19-3 20 2-10 16" stroke="#d87932"/>
+</g>
+<g font-family="Noto Sans CJK KR, NanumGothic, Malgun Gothic, sans-serif" font-size="28" font-weight="500" text-anchor="middle">
+<text x="368" y="308" fill="#3b728d">나중</text>
+<text x="660" y="363" fill="#d87932">지금</text>
+<text x="739" y="548" fill="#202020">한 번에 하나</text>
+</g>
+</svg>

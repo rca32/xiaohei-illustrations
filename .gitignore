@@ -1,14 +1,16 @@
 .DS_Store
 Thumbs.db
 
-# Local generated outputs
+# 로컬 생성 결과
 generated/
 outputs/
 dist/
 
-# Local editor files
+# 편집기 설정
 .idea/
 .vscode/
 
-# Logs
+# 로그와 파이썬 캐시
 *.log
+__pycache__/
+*.pyc

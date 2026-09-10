@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" xml:lang="ko" role="img" aria-labelledby="title desc">
+<title>기록의 축적</title><desc>샤오헤이가 쪽지들을 실로 연결해 다시 쓸 수 있는 기록을 만든다.</desc>
+<rect width="1280" height="720" fill="#fff"/>
+<defs><g id="xiaohei"><path d="M-27 2Q-39-25-25-49Q-10-66 13-58Q34-56 32-31L30 4Q6 16-27 2Z" fill="#202020"/><circle cx="-9" cy="-34" r="4" fill="#fff"/><circle cx="9" cy="-34" r="4" fill="#fff"/><path d="M-16 9l-4 29-13 3M17 10l5 28 12 1" fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round"/></g></defs>
+<g fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M277 289l73-4 5 76-75 5Z M302 386l70-2 1 74-73-1Z M291 310l44-2m-42 19 34-1m-20 78h38m-38 18h27"/>
+<use href="#xiaohei" x="451" y="415"/><path d="M478 390l39-26m-44 39 44-9"/>
+<path d="M542 276q151-14 304 2l-3 207q-152-12-302 2Z M643 276l-3 207m104-206-2 205 M542 344l303-1m-303 70 301-2"/>
+<path d="M562 298h58m-57 19h42m101-20h48m-46 22h58m-39 48h50m-208-2h48m-49 21h37m-2 49h48m99-2h54m-51 20h35"/>
+<path d="M355 326q59-69 128 11t72 33 M518 337l-2 45m-7-16 15 1 M633 292h18m-18 28h18m-18 37h18m-18 29h18m-18 44h18m-18 28h18" stroke="#d87932"/>
+</g>
+<g font-family="Noto Sans CJK KR, NanumGothic, Malgun Gothic, sans-serif" font-size="28" font-weight="500" text-anchor="middle">
+<text x="313" y="247" fill="#202020">기록</text>
+<text x="470" y="270" fill="#d87932">연결</text>
+<text x="698" y="548" fill="#3b728d">재사용</text>
+</g>
+</svg>

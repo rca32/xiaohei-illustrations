@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" xml:lang="ko" role="img" aria-labelledby="title desc">
+<title>정보 과부하</title><desc>샤오헤이가 종이를 체로 걸러 핵심만 남긴다.</desc>
+<rect width="1280" height="720" fill="#fff"/>
+<defs><g id="xiaohei"><path d="M-27 2Q-39-25-25-49Q-10-66 13-58Q34-56 32-31L30 4Q6 16-27 2Z" fill="#202020"/><circle cx="-9" cy="-34" r="4" fill="#fff"/><circle cx="9" cy="-34" r="4" fill="#fff"/><path d="M-16 9l-4 29-13 3M17 10l5 28 12 1" fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round"/></g></defs>
+<g fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M230 354l67-69 61 51-66 78Z M247 309l17-43 80 23-17 43 M266 340l36-14m-20 33 36-14"/>
+<path d="M435 296q107-11 224 3l-45 105-133 1Z M452 321l191 1m-181 22h172m-162 22h151m-140 20h130 M475 303l35 99m10-101 16 100m37-101-6 102m48-103-26 103"/>
+<use href="#xiaohei" x="393" y="414"/>
+<path d="M417 390l37-41m-82 42 12-39 51-34"/>
+<path d="M358 280q29-34 66 2m-18-2 19 3-3-19" stroke="#d87932"/>
+<path d="M548 425v35m-9-9 9 10 10-10" stroke="#d87932"/>
+<path d="M700 376l87 2-2 101-88-2Z M714 399l54 1m-54 19h43"/>
+<path d="M618 445q30-20 64-19m-13-8 14 8-13 10" stroke="#d87932"/>
+<path d="M715 445l11 12 25-29" stroke="#3b728d"/>
+</g>
+<g font-family="Noto Sans CJK KR, NanumGothic, Malgun Gothic, sans-serif" font-size="28" font-weight="500" text-anchor="middle">
+<text x="287" y="230" fill="#202020">모으기</text>
+<text x="545" y="250" fill="#d87932">선별</text>
+<text x="746" y="535" fill="#3b728d">핵심만</text>
+</g>
+</svg>

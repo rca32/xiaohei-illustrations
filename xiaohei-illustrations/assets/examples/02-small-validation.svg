@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" xml:lang="ko" role="img" aria-labelledby="title desc">
+<title>작은 검증</title><desc>샤오헤이가 작은 시험 장치의 손잡이를 돌려 가설을 확인한다.</desc>
+<rect width="1280" height="720" fill="#fff"/>
+<defs><g id="xiaohei"><path d="M-27 2Q-39-25-25-49Q-10-66 13-58Q34-56 32-31L30 4Q6 16-27 2Z" fill="#202020"/><circle cx="-9" cy="-34" r="4" fill="#fff"/><circle cx="9" cy="-34" r="4" fill="#fff"/><path d="M-16 9l-4 29-13 3M17 10l5 28 12 1" fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round"/></g></defs>
+<g fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M310 226l87 3-2 95-85-1Z M328 253h48m-48 21h35"/>
+<path d="M437 342q128-8 272 0l-4 135-264 2Z M466 477l-4 28m219-29 7 28"/>
+<path d="M506 341l1-63 117-2 1 67 M525 277l41-37 42 35 M473 369l88 2m-89 17h58"/>
+<circle cx="648" cy="410" r="34"/><path d="M648 376v68m-34-34h68m-34 0 52-3" stroke="#d87932"/>
+<use href="#xiaohei" x="759" y="432"/>
+<path d="M733 408l-33-1m35 23-18-9"/>
+<path d="M839 331l17 19 36-45" stroke="#3b728d"/>
+<path d="M399 290q31 3 45 30m-15-7 16 9 2-18" stroke="#d87932"/>
+</g>
+<g font-family="Noto Sans CJK KR, NanumGothic, Malgun Gothic, sans-serif" font-size="28" font-weight="500" text-anchor="middle">
+<text x="350" y="197" fill="#202020">가설</text>
+<text x="570" y="547" fill="#d87932">작게 실험</text>
+<text x="864" y="391" fill="#3b728d">확인</text>
+</g>
+</svg>

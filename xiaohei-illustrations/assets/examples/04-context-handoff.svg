@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" xml:lang="ko" role="img" aria-labelledby="title desc">
+<title>맥락 인계</title><desc>두 샤오헤이가 목표와 결정과 다음 단계를 담은 상자를 건넨다.</desc>
+<rect width="1280" height="720" fill="#fff"/>
+<defs><g id="xiaohei"><path d="M-27 2Q-39-25-25-49Q-10-66 13-58Q34-56 32-31L30 4Q6 16-27 2Z" fill="#202020"/><circle cx="-9" cy="-34" r="4" fill="#fff"/><circle cx="9" cy="-34" r="4" fill="#fff"/><path d="M-16 9l-4 29-13 3M17 10l5 28 12 1" fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round"/></g></defs>
+<g fill="none" stroke="#202020" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M253 489l276-2-18 40 19 33m106-73 289 2 M636 487l17 39-12 32"/>
+<use href="#xiaohei" x="403" y="446"/><use href="#xiaohei" x="775" y="446"/>
+<path d="M469 331q113-7 231 0l-2 123-226 2Z M526 330v-24l114-1 1 25"/>
+<path d="M429 421l43-18m-44 36 44-12m278-9-51-13m51 36-51-16"/>
+<path d="M512 354l38 1-1 66-39-2Z M568 353l38 2-1 64-37 1Z M625 354l38 1-1 66-39-1Z"/>
+<path d="M468 213q114-42 236 0m-16-15 17 16-25 2" stroke="#d87932"/>
+<path d="M529 353l-33-64m90 64v-53m58 54 39-65" stroke="#3b728d"/>
+</g>
+<g font-family="Noto Sans CJK KR, NanumGothic, Malgun Gothic, sans-serif" font-size="28" font-weight="500" text-anchor="middle">
+<text x="487" y="280" fill="#202020">목표</text>
+<text x="586" y="290" fill="#202020">결정</text>
+<text x="723" y="280" fill="#3b728d">다음 단계</text>
+</g>
+</svg>
