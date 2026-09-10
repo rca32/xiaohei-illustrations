@@ -1,6 +1,6 @@
 interface:
   display_name: "샤오헤이 본문 일러스트"
   short_description: "한국어 글의 핵심 생각을 한글 주석과 샤오헤이 손그림으로 표현합니다"
-  default_prompt: "$xiaohei-illustrations 스킬로 아래 한국어 글에 들어갈 그림을 기획하고 각각 생성해 줘. 순백색 배경과 짧고 정확한 한글 주석을 사용해 줘."
+  default_prompt: "$xiaohei-illustrations 스킬로 아래 한국어 글에 들어갈 그림을 기획하고 각각 생성해 줘. assets/reference/xiaohei-character-reference.png를 캐릭터 외형 참조 이미지로 첨부하고, 순백색 배경과 짧고 정확한 한글 주석을 사용해 줘."
 policy:
   allow_implicit_invocation: true

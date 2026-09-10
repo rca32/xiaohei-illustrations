@@ -17,6 +17,7 @@
 - 일반적인 글은 4~8장의 장면 계획, 짧은 글은 1~3장.
 - 각 장면의 삽입 위치, 전달할 생각, 구성, 캐릭터 행동, 정확한 한글 표기.
 - 이미지 생성 도구로 만든 개별 PNG 파일. 기본 저장 위치는 `assets/<article-slug>-illustrations/`.
+- 모든 본문 그림 생성에 함께 첨부하는 샤오헤이 캐릭터 참조 이미지: [`xiaohei-character-reference.png`](xiaohei-illustrations/assets/reference/xiaohei-character-reference.png).
 
 계획만 요청하면 이미지를 생성하지 않습니다. 이미지 생성 기능이 없는 환경에서는 계획과 프롬프트만 제공하며, 생성하지 않은 이미지를 완성본이라고 안내하지 않습니다. SVG, HTML, PPTX, PDF 제작은 기본 결과물이 아닙니다.
 
@@ -104,6 +105,8 @@ $xiaohei-illustrations
 
 순백색 배경, 검은 손그림 선, 넓은 여백을 기본으로 합니다. 빨강은 문제와 강조, 주황은 주요 움직임, 파랑은 보조 설명에만 절제해 사용합니다. 한글 주석은 보통 3~5개, 최대 8개이며 각 주석은 짧은 단어 또는 어구로 씁니다.
 
+실제 이미지 생성 때는 [샤오헤이 참조 이미지](xiaohei-illustrations/assets/reference/xiaohei-character-reference.png)를 캐릭터 외형 전용 입력 이미지로 첨부합니다. 참조 이미지의 검은 몸, 흰 점 눈, 가느다란 팔다리와 담담한 인상만 유지하고, 자세·배경·소품은 현재 장면에 맞게 새로 만듭니다.
+
 그림에 요청하지 않은 제목, 개인 서명, 연락처, 홍보 문구, QR 코드를 넣지 않습니다. 한글 오탈자와 깨진 글자는 생성 후 직접 확인하고 수정합니다. 읽을 수 없는 글자를 삭제하거나 영문으로 바꾸는 것으로 한국어 검수를 대신하지 않습니다.
 
 ## 폴더 안내
@@ -122,6 +125,7 @@ $xiaohei-illustrations
     ├── NOTICE.md
     ├── agents/openai.yaml
     ├── assets/examples/         # 이미지 생성 도구로 만든 한글 PNG 예제 8개
+    ├── assets/reference/        # 샤오헤이 일관성 참조 이미지
     └── references/              # 스타일·캐릭터·구성·프롬프트·검수
 ```
 

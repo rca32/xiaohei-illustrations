@@ -22,10 +22,16 @@ def check(condition: bool, message: str) -> None:
         raise ValueError(message)
 
 
+def png_dimensions(path: Path) -> tuple[int, int]:
+    data = path.read_bytes()
+    check(len(data) >= 24 and data.startswith(PNG_SIGNATURE) and data[12:16] == b"IHDR", f"PNG 형식 오류: {path.name}")
+    return struct.unpack(">II", data[16:24])
+
+
 def validate() -> None:
     references = ("style-dna", "xiaohei-ip", "composition-patterns", "prompt-template", "qa-checklist")
     required = [ROOT / p for p in ("README.md", "AGENTS.md", "NOTICE.md", "LICENSE", "examples/prompts.md")]
-    required += [SKILL / p for p in ("SKILL.md", "LICENSE", "NOTICE.md", "agents/openai.yaml", "assets/examples/README.md")]
+    required += [SKILL / p for p in ("SKILL.md", "LICENSE", "NOTICE.md", "agents/openai.yaml", "assets/examples/README.md", "assets/reference/README.md", "assets/reference/xiaohei-character-reference.png")]
     required += [SKILL / "references" / (name + ".md") for name in references]
     check(all(p.is_file() for p in required), "필수 문서 또는 설치 파일이 없습니다.")
     packages = sorted(p.parent.relative_to(ROOT).as_posix() for p in ROOT.glob("*/SKILL.md"))
@@ -55,11 +61,13 @@ def validate() -> None:
     check({p.name for p in assets.iterdir()} == {"README.md", *(name + ".png" for name in EXAMPLES)}, "예제 폴더에 불필요한 파일이 있습니다.")
     catalog = (assets / "README.md").read_text(encoding="utf-8")
     for image in images:
-        data = image.read_bytes()
-        check(len(data) >= 24 and data.startswith(PNG_SIGNATURE) and data[12:16] == b"IHDR", f"PNG 형식 오류: {image.name}")
-        width, height = struct.unpack(">II", data[16:24])
+        width, height = png_dimensions(image)
         check(width > 0 and height > 0 and abs((width / height) - (16 / 9)) < 0.02, f"PNG 비율 오류: {image.name}")
         check(image.name in catalog, f"예제 목록과 PNG 파일명이 다릅니다: {image.name}")
+
+    reference = SKILL / "assets/reference/xiaohei-character-reference.png"
+    width, height = png_dimensions(reference)
+    check(1.5 < (width / height) < 2.5, "샤오헤이 참조 이미지 비율 오류")
 
     checked = 0
     for path in ROOT.rglob("*"):
@@ -80,12 +88,12 @@ def validate() -> None:
                 local = (path.parent / target.split("#", 1)[0]).resolve()
                 check(local.is_relative_to(ROOT) and local.exists(), f"끊어진 문서 링크: {path.name}: {target}")
         checked += 1
-    print(f"통과: 한국어 문서·설정·예제 {checked}개, PNG {len(images)}개, 스킬 이름·참조·라이선스·문서 링크")
+    print(f"통과: 한국어 문서·설정·예제 {checked}개, PNG {len(images)}개와 참조 이미지, 스킬 이름·참조·라이선스·문서 링크")
 
 
 if __name__ == "__main__":
     try:
         validate()
-    except (ValueError, OSError, ET.ParseError) as error:
+    except (ValueError, OSError, struct.error) as error:
         print(f"실패: {error}", file=sys.stderr)
         sys.exit(1)
